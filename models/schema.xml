@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<database namespace="Cocktails" name="default" defaultIdMethod="native" defaultPhpNamingMethod="underscore">
+  <table name="recipes_popularity" idMethod="native" phpName="RecipesPopularity">
+    <column name="url" phpName="Url" type="VARCHAR" primaryKey="true" autoIncrement="true" required="true"/>
+    <column name="title" phpName="Title" type="VARCHAR" primaryKey="true" autoIncrement="true" required="true"/>
+    <column name="favorited" phpName="Favorited" type="INTEGER" required="true"/>
+    <vendor type="mysql">
+      <parameter name="Engine" value="InnoDB"/>
+    </vendor>
+  </table>
+</database>
